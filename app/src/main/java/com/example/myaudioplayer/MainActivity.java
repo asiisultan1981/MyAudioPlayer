@@ -132,13 +132,13 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         switch (sortOrder)
         {
             case "SortByName":
-                order = MediaStore.MediaColumns.DISPLAY_NAME + "ASC";
+                order = MediaStore.MediaColumns.DISPLAY_NAME + " ASC"; // "SPACE ASC" space dena hay comas k bhd
                 break;
             case "SortByDate":
-                order = MediaStore.MediaColumns.DATE_ADDED + "ASC";
+                order = MediaStore.MediaColumns.DATE_ADDED + " ASC";// "SPACE ASC"
                 break;
             case "SortBySize":
-                order = MediaStore.MediaColumns.SIZE + "DESC";
+                order = MediaStore.MediaColumns.SIZE + " DESC";
                 break;
 
         }
